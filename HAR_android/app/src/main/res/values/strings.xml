@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Human Activity Recognition</string>
+    <string name="activity">Activity</string>
+    <string name="probability">Probability</string>
+    <string name="walking">Walking</string>
+    <string name="walkingupstairs">Walking Upstairs</string>
+    <string name="walkingdownstairs">Walking Downstairs</string>
+    <string name="sitting">Sitting</string>
+    <string name="standing">Standing</string>
+    <string name="laying">Laying</string>
+    <string name="standtosit">Stand to Sit</string>
+    <string name="sittostand">Sit to Stand</string>
+    <string name="sittolie">Sit to Lie</string>
+    <string name="lietosit">Lie to Sit</string>
+    <string name="standtolie">Stand to Lie</string>
+    <string name="lietostand">Lie to Stand</string>
+
+</resources>

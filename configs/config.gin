@@ -1,0 +1,39 @@
+# Training
+Trainer.total_steps = 1000
+Trainer.log_interval = 200
+Trainer.ckpt_interval = 200
+
+# Input pipeline
+# load.name = 'HAPT Data Set'
+# prepare.caching = False
+load_from_tfrecords.data_dir = r'/content/drive/MyDrive/HAR_S2S/S2S_2'
+load_from_tfrecords.batch_size = 32
+
+# LSTM
+LSTM.rnn_units1 = 32
+LSTM.rnn_units2 = 16
+LSTM.dense_units = 16
+LSTM.dropout_rate = 0.3
+
+# TransformerS2L
+TransformerS2L.ff_dim = 128
+TransformerS2L.num_layer = 4
+TransformerS2L.num_heads = 32
+TransformerS2L.dropout_rate = 0.25969305615097504
+TransformerS2L.dense_units = 70
+
+# TransformerS2S
+TransformerS2S.num_layers = 1
+TransformerS2S.d_model = 128
+TransformerS2S.num_heads = 8
+TransformerS2S.dff = 64
+TransformerS2S.kernel_size = 7
+TransformerS2S.rate = 0.2864932844522684
+
+# DenseNet
+DenseNet.nb_dense_block = 4
+DenseNet.nb_layers = 3
+DenseNet.growth_rate = 8
+DenseNet.nb_filter = 16
+DenseNet.reduction = 0.2
+DenseNet.dropout_rate = 0.5
